@@ -17,7 +17,10 @@ exports.plugins = {
     },
   },
   copycat: {
-    fonts: ['node_modules/bootstrap/dist/fonts'],
+    fonts: [
+      'node_modules/bootstrap/dist/fonts',
+      'node_modules/font-awesome/fonts'
+    ],
     onlyChanged: true,
   },
 };
@@ -36,5 +39,7 @@ exports.npm = {
   },
   styles: {
     bootstrap: ['dist/css/bootstrap.css'],
+    'bootstrap-social': ['bootstrap-social.css'],
+    'font-awesome': ['css/font-awesome.css']
   },
 };
