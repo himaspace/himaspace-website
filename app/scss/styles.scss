@@ -19,10 +19,16 @@ body {
     font-size: 150%;
 }
 
-.joinus {
-    font-size: 200%;
-}
-
 .social {
     text-align: center;
+}
+
+form.subscribe {
+    label {
+        font-size: 28px;
+
+    }
+    input {
+        margin-top: 10px;
+    }
 }
