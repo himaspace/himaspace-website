@@ -18,11 +18,19 @@ exports.plugins = {
   },
   copycat: {
     fonts: [
-      'node_modules/bootstrap/dist/fonts',
+      'node_modules/bootstrap-sass/assets/fonts',
       'node_modules/font-awesome/fonts'
     ],
     onlyChanged: true,
   },
+  sass: {
+    options: {
+      includePaths: [
+        'node_modules/bootstrap-sass/assets/stylesheets/',
+        'node_modules/bootstrap-social/'
+      ]
+    }
+  }
 };
 
 exports.modules = {
@@ -35,11 +43,9 @@ exports.npm = {
   globals: {
     jQuery: 'jquery',
     $: 'jquery',
-    bootstrap: 'bootstrap',
+    bootstrap: 'bootstrap-social',
   },
   styles: {
-    bootstrap: ['dist/css/bootstrap.css'],
-    'bootstrap-social': ['bootstrap-social.css'],
     'font-awesome': ['css/font-awesome.css']
   },
 };
