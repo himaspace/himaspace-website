@@ -28,7 +28,7 @@
     "eslint-plugin-prettier": "^2",
     "pleeease-brunch": "^3",
     "prettier": "^1",
-    "sass-brunch": "^2",
+    "sass-brunch": "^2.10.7",
     "uglify-js-brunch": "^2"
   }
 }
